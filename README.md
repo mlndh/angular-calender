@@ -10,7 +10,7 @@ TypeScript
 Sass
 Material design
 
-#How to use
+# How to use
  ### Open a terminal (Command Prompt or PowerShell for Windows, Terminal for macOS or Linux)
 
 ### Ensure Git is installed
