@@ -1,0 +1,38 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  :hover {
+    cursor: pointer;
+    border-color: rgb(122, 117, 117);
+  }
+}
+
+.card-content {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.appointment {
+  padding: 20px 10px 0px 10px;
+  text-align: center;
+  background: #7f7f7f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-success {
+  background-color: transparent;
+  color: #fff;
+  margin: 10px;
+  align-self: flex-end;
+}
+
+.add-new-button {
+  color: grey;
+  margin: 10px;
+  align-self: flex-end;
+}

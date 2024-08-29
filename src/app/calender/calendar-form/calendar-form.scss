@@ -1,0 +1,16 @@
+* {
+  --mdc-filled-text-field-container-shape: 5px;
+  --mdc-filled-text-field-active-indicator-color: white;
+  --mdc-filled-text-field-hover-active-indicator-color: white;
+}
+
+.form-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  gap: 5px;
+}

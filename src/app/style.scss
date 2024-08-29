@@ -1,0 +1,32 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+$myapp-theme-primary: mat.m2-define-palette(mat.$m2-brown-palette);
+$myapp-theme-accent: mat.m2-define-palette(mat.$m2-teal-palette);
+$myapp-theme-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+$myapp-theme: mat.m2-define-light-theme(
+  (
+    color: (
+      primary: $myapp-theme-primary,
+      accent: $myapp-theme-accent,
+      warn: $myapp-theme-warn,
+    ),
+  )
+);
+
+@mixin all-component-themes($theme) {
+  $dedupe-key: "angular-material-theme";
+  @include theming.private-check-duplicate-theme-styles($theme, $dedupe-key) {
+    @include core-theme.theme($theme);
+    @include card-theme.theme($theme);
+    @include progress-bar-theme.theme($theme);
+    @include tooltip-theme.theme($theme);
+    @include form-field-theme.theme($theme);
+  }
+}
+
+@include mat.core-theme($myapp-theme);
+@include mat.button-theme($myapp-theme);
+@include mat.form-field-color($myapp-theme);
